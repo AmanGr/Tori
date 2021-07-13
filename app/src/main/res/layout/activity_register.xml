@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    tools:context=".RegisterActivity" >
+
+    <TextView
+        android:id="@+id/alreadyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Already have an account?"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/reButtonR"
+        app:layout_constraintStart_toStartOf="@+id/reButtonR"
+        app:layout_constraintTop_toBottomOf="@+id/reButtonR" />
+
+    <EditText
+        android:id="@+id/userEditTextR"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/rounded_edittext_register_login"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectPhotoBR" />
+
+    <EditText
+        android:id="@+id/emailEditTextR"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_edittext_register_login"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/userEditTextR"
+        app:layout_constraintStart_toStartOf="@+id/userEditTextR"
+        app:layout_constraintTop_toBottomOf="@+id/userEditTextR" />
+
+    <EditText
+        android:id="@+id/passwordEditTextR"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_edittext_register_login"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/emailEditTextR"
+        app:layout_constraintStart_toStartOf="@+id/emailEditTextR"
+        app:layout_constraintTop_toBottomOf="@+id/emailEditTextR" />
+
+    <Button
+        android:id="@+id/reButtonR"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Register"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/passwordEditTextR"
+        app:layout_constraintStart_toStartOf="@+id/passwordEditTextR"
+        app:layout_constraintTop_toBottomOf="@+id/passwordEditTextR" />
+
+    <Button
+        android:id="@+id/selectPhotoBR"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/circle_button"
+        android:text="Select Photo"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:backgroundTint="@null"
+        app:cornerRadius="180dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/selectPhotoBRC"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/selectPhotoBR"
+        app:layout_constraintEnd_toEndOf="@+id/selectPhotoBR"
+        app:layout_constraintStart_toStartOf="@+id/selectPhotoBR"
+        app:layout_constraintTop_toTopOf="@+id/selectPhotoBR" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
