@@ -22,7 +22,7 @@ android {
         applicationId "com.github.amangr.kotlinmessanger"
         minSdkVersion 16
         targetSdkVersion 30
-        versionCode gti
+        versionCode 1
         versionName "1.0"
         multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"

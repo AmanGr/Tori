@@ -12,7 +12,7 @@ class NewMessageActivity : AppCompatActivity() {
         setContentView(R.layout.activity_new_message)
 
         supportActionBar?.title = "Select User"
-
+// assigning adapter
         val adapter = GroupAdapter<GroupieViewHolder>()
         recyclerView_newmessage.adapter = adapter
     }
