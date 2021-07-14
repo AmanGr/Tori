@@ -1,10 +1,13 @@
-package com.github.amangr.kotlinmessanger
+package com.github.amangr.kotlinmessanger.messages
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import com.github.amangr.kotlinmessanger.NewMessageActivity
+import com.github.amangr.kotlinmessanger.R
+import com.github.amangr.kotlinmessanger.RegisterActivity
 import com.google.firebase.auth.FirebaseAuth
 
 class LatestMessagesActivity : AppCompatActivity() {
