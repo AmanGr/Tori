@@ -2,7 +2,9 @@ package com.github.amangr.kotlinmessanger
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.recyclerview.widget.RecyclerView
 import com.xwray.groupie.GroupAdapter
+import com.xwray.groupie.Item
 import com.xwray.groupie.kotlinandroidextensions.GroupieViewHolder
 import kotlinx.android.synthetic.main.activity_new_message.*
 
@@ -12,9 +14,30 @@ class NewMessageActivity : AppCompatActivity() {
         setContentView(R.layout.activity_new_message)
 
         supportActionBar?.title = "Select User"
+
+//        val adapter = GroupAdapter<GroupieViewHolder>()
+//        adapter.add(UserItem())
+//        adapter.add(UserItem())
+//        recyclerView_newmessage.setAdapter(adapter)
+
+
 // assigning adapter
         val adapter = GroupAdapter<GroupieViewHolder>()
+        adapter.add(UserItem())
+        adapter.add(UserItem())
+        adapter.add(UserItem())
+
+
+
         recyclerView_newmessage.adapter = adapter
+    }
+}
+class UserItem: Item<GroupieViewHolder>() {
+    override fun bind(viewHolder: GroupieViewHolder, position: Int) {
+    }
+
+    override fun getLayout(): Int {
+        return R.layout.user_row_new_message
     }
 }
 
