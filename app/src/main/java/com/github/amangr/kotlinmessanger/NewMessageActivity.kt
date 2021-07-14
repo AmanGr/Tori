@@ -2,10 +2,11 @@ package com.github.amangr.kotlinmessanger
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.recyclerview.widget.RecyclerView
 import com.xwray.groupie.GroupAdapter
 import com.xwray.groupie.Item
-import com.xwray.groupie.kotlinandroidextensions.GroupieViewHolder
+import com.xwray.groupie.GroupieViewHolder
 import kotlinx.android.synthetic.main.activity_new_message.*
 
 class NewMessageActivity : AppCompatActivity() {
@@ -35,6 +36,10 @@ class NewMessageActivity : AppCompatActivity() {
 class UserItem: Item<GroupieViewHolder>() {
     override fun bind(viewHolder: GroupieViewHolder, position: Int) {
     }
+
+//    override fun createViewHolder(itemView: View): GroupieViewHolder {
+//        return super.createViewHolder(itemView)
+//    }
 
     override fun getLayout(): Int {
         return R.layout.user_row_new_message
