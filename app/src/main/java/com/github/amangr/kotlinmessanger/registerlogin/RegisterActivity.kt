@@ -9,6 +9,7 @@ import android.provider.MediaStore
 import android.util.Log
 import android.widget.Toast
 import com.github.amangr.kotlinmessanger.messages.LatestMessagesActivity
+import com.github.amangr.kotlinmessanger.models.User
 import com.github.amangr.kotlinmessanger.registerlogin.LoginActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
@@ -134,6 +135,6 @@ class RegisterActivity : AppCompatActivity() {
 }
 
 }
-class User(val uid: String, val username: String, val profileImageUri: String) {
-    constructor() : this("","","")
-}
+//class User(val uid: String, val username: String, val profileImageUri: String) {
+//    constructor() : this("","","")
+//}
