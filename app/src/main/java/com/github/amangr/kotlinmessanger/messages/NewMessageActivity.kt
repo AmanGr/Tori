@@ -1,10 +1,12 @@
 package com.github.amangr.kotlinmessanger
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
+import com.github.amangr.kotlinmessanger.messages.ChatLogActivity
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
@@ -25,6 +27,10 @@ class NewMessageActivity : AppCompatActivity() {
 
         fetchUser()
     }
+    companion object {
+        val USER_KEY = "USER_KEY"
+    }
+
     private fun fetchUser() {
         val ref = FirebaseDatabase.getInstance().getReference("/users")
         ref.addListenerForSingleValueEvent(object: ValueEventListener {
@@ -39,6 +45,15 @@ class NewMessageActivity : AppCompatActivity() {
                         adapter.add(UserItem(user))
                     }
                 }
+                adapter.setOnItemClickListener { item, view ->
+                    val userItem = item as UserItem
+                    val intent = Intent(view.context, ChatLogActivity::class.java)
+                    intent.putExtra(USER_KEY, userItem.user.username)
+                    startActivity(intent)
+
+                    finish()
+                }
+                
                 recyclerView_newmessage.adapter = adapter
 
             }
