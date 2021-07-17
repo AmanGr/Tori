@@ -1,4 +1,4 @@
-package com.github.amangr.kotlinmessanger
+package com.github.amangr.kotlinmessanger.registerlogin
 
 import android.app.Activity
 import android.content.Intent
@@ -8,9 +8,9 @@ import android.os.Bundle
 import android.provider.MediaStore
 import android.util.Log
 import android.widget.Toast
+import com.github.amangr.kotlinmessanger.R
 import com.github.amangr.kotlinmessanger.messages.LatestMessagesActivity
 import com.github.amangr.kotlinmessanger.models.User
-import com.github.amangr.kotlinmessanger.registerlogin.LoginActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.storage.FirebaseStorage

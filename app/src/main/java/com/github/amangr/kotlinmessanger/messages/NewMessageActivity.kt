@@ -1,12 +1,10 @@
-package com.github.amangr.kotlinmessanger
+package com.github.amangr.kotlinmessanger.messages
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.view.View
-import androidx.recyclerview.widget.RecyclerView
-import com.github.amangr.kotlinmessanger.messages.ChatLogActivity
+import com.github.amangr.kotlinmessanger.R
 import com.github.amangr.kotlinmessanger.models.User
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
