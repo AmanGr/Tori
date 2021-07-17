@@ -71,7 +71,7 @@ class UserItem(val user: User): Item<GroupieViewHolder>() {
 
         Picasso.get().load(user.profileImageUri).into(viewHolder.itemView.imageView_for_newMessage)
     }
-// will uncomment this in the future
+// will uncomment this in the future.
 //    override fun createViewHolder(itemView: View): GroupieViewHolder {
 //        return super.createViewHolder(itemView)
 //}
