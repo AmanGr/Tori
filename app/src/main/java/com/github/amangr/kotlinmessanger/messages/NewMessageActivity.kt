@@ -71,10 +71,10 @@ class UserItem(val user: User): Item<GroupieViewHolder>() {
 
         Picasso.get().load(user.profileImageUri).into(viewHolder.itemView.imageView_for_newMessage)
     }
-
+// will uncomment this in the future
 //    override fun createViewHolder(itemView: View): GroupieViewHolder {
 //        return super.createViewHolder(itemView)
-//    }
+//}
 
     override fun getLayout(): Int {
         return R.layout.user_row_new_message
