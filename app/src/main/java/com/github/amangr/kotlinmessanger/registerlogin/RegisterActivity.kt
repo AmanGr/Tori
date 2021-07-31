@@ -60,7 +60,7 @@ class RegisterActivity : AppCompatActivity() {
             selectPhotoBRC.setImageBitmap(bitmap)
 
             selectPhotoBR.alpha = 0f
-
+//bitmap
             //val bitmapDrawable = BitmapDrawable(bitmap)
             //selectPhotoBR.setBackgroundDrawable(bitmapDrawable)
         }
